@@ -1,0 +1,7 @@
+ami_id           = "ami-07ff62358b87c7116"
+instance_type    = "t2.micro" 
+key_name         = "del-labs-key"  
+security_group_id = "sg-0c0395970fa45df6f"
+subnet_id        = "subnet-0ab875d4d8d8843c9" 
+instance_name    = "s10Arnaud_ec2"
+region           = "us-east-1"
