@@ -57,3 +57,14 @@ variable "bucket_name" {
   description = "The name of the S3 bucket"
   type        = string
 }
+
+variable "description" {
+  description = "Description for the security group"
+  type        = string
+  default     = "Managed by Terraform"
+}
+
+variable "instance_name" {
+  description = "The name of the EC2 instance"
+  type        = string
+}
