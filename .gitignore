@@ -1,8 +1,17 @@
+# Terraform
 .terraform/
-*.zip
-*.exe
-terraform.tfstate*
-*.zip
-*.exe
+.terraform.lock.hcl
 terraform.tfstate*
 .terraform.tfstate.lock.info
+
+# Binaries
+*.zip
+*.exe
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
