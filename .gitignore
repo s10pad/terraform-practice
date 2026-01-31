@@ -5,3 +5,4 @@ terraform.tfstate*
 *.zip
 *.exe
 terraform.tfstate*
+.terraform.tfstate.lock.info
