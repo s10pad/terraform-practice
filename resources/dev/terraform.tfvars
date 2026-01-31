@@ -1,0 +1,8 @@
+region            = "us-east-1"
+vpc_name          = "dev-vpc"
+availability_zone = "us-east-1a"
+sg_name           = "dev-sg"
+ami_id            = "ami-0b6c6ebed2801a5cb"
+instance_type     = "t2.micro"
+key_pair_name     = "del-labs-key"
+bucket_name       = "dev-s11-s10-arnaud-bucket"
