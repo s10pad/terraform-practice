@@ -1,20 +1,11 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
+      source                = "hashicorp/aws"
+      version               = "~> 5.0"
+      configuration_aliases = [aws.primary, aws.replica]
     }
   }
-}
-
-provider "aws" {
-  alias  = "primary"
-  region = "us-east-1"
-}
-
-provider "aws" {
-  alias  = "replica"
-  region = "us-east-2"
 }
 
 # Primary S3 Bucket (us-east-1)

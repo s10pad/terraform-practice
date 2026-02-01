@@ -20,3 +20,8 @@ key_pair_name = "del-labs-key"
 
 # S3 Module
 bucket_name = "s11-s3-s10-arnaud-bucket"
+
+# S3 Backend Module
+backend_bucket_name    = "s11-terraform-state-s10arnaud"
+backend_dynamodb_table = "s11-terraform-state-locks"
+backend_environment    = "dev"

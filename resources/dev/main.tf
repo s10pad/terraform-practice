@@ -37,3 +37,16 @@ module "s3_bucket" {
   bucket_name = var.bucket_name
   region      = var.region
 }
+
+module "s3_backend" {
+  source = "git::https://github.com/s10pad/terraform-practice.git//module/s3-backend"
+
+  providers = {
+    aws.primary = aws
+    aws.replica = aws.replica
+  }
+
+  bucket_name         = var.backend_bucket_name
+  dynamodb_table_name = var.backend_dynamodb_table
+  environment         = var.backend_environment
+}

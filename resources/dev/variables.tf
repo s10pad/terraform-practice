@@ -68,3 +68,21 @@ variable "instance_name" {
   description = "The name of the EC2 instance"
   type        = string
 }
+
+# S3 Backend Variables
+variable "backend_bucket_name" {
+  description = "Name of the S3 bucket for Terraform state"
+  type        = string
+}
+
+variable "backend_dynamodb_table" {
+  description = "Name of the DynamoDB table for state locking"
+  type        = string
+  default     = "terraform-state-locks"
+}
+
+variable "backend_environment" {
+  description = "Environment tag for the backend resources"
+  type        = string
+  default     = "shared"
+}
