@@ -6,3 +6,8 @@ key_pair_name     = "del-labs-key"
 vpc_name          = "s11-vpc"
 availability_zone = "us-east-1a"
 sg_name           = "s11-sg"
+
+# S3 Backend Configuration
+backend_bucket_name     = "s11-terraform-state-s10arnaud"
+backend_dynamodb_table  = "s11-terraform-state-locks"
+backend_environment     = "shared"
